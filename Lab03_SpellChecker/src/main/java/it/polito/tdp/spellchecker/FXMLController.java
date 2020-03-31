@@ -1,6 +1,7 @@
 package it.polito.tdp.spellchecker;
 
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -8,8 +9,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.TextArea;
+import it.polito.tdp.spellchecker.model.*;
 
 public class FXMLController {
+	
+	private List<String> inputTextList;
 
     @FXML
     private ResourceBundle resources;
@@ -37,11 +41,16 @@ public class FXMLController {
 
     @FXML
     void handleClear(ActionEvent event) {
+    	testotxt.clear();
+    	resulttxt.clear();
 
     }
 
     @FXML
     void handlecheck(ActionEvent event) {
+    	//resulttxt.appendText(testotxt.getText());
+    	
+    	
 
     }
 
