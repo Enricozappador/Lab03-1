@@ -3,6 +3,8 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -26,8 +28,12 @@
                         <Insets left="15.0" />
                      </HBox.margin>
                   </Label>
-                  <Button fx:id="Italianbtn" mnemonicParsing="false" onAction="#handleItaliano" text="Italiano" />
-                  <Button fx:id="englishbtn" mnemonicParsing="false" onAction="#handleEnglish" text="English" />
+                  <MenuButton fx:id="Languagebtn" mnemonicParsing="false" text="Selezionare Lingua">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Italiano" />
+                      <MenuItem mnemonicParsing="false" text="English" />
+                    </items>
+                  </MenuButton>
                </children>
             </HBox>
             <TextArea fx:id="testotxt" promptText="Inserisci qui la tua frase...">
