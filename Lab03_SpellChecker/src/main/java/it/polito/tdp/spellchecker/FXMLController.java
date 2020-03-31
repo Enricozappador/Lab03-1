@@ -6,7 +6,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.MenuButton;
 import javafx.scene.control.TextArea;
 
 public class FXMLController {
@@ -18,7 +17,10 @@ public class FXMLController {
     private URL location;
 
     @FXML
-    private MenuButton Dropdownbrn;
+    private Button Italianbtn;
+
+    @FXML
+    private Button englishbtn;
 
     @FXML
     private TextArea testotxt;
@@ -41,18 +43,24 @@ public class FXMLController {
     }
 
     @FXML
+    void handleEnglish(ActionEvent event) {
+
+    }
+
+    @FXML
+    void handleItaliano(ActionEvent event) {
+
+    }
+
+    @FXML
     void handlecheck(ActionEvent event) {
 
     }
 
     @FXML
-    void handledrop(ActionEvent event) {
-
-    }
-
-    @FXML
     void initialize() {
-        assert Dropdownbrn != null : "fx:id=\"Dropdownbrn\" was not injected: check your FXML file 'Scene.fxml'.";
+        assert Italianbtn != null : "fx:id=\"Italianbtn\" was not injected: check your FXML file 'Scene.fxml'.";
+        assert englishbtn != null : "fx:id=\"englishbtn\" was not injected: check your FXML file 'Scene.fxml'.";
         assert testotxt != null : "fx:id=\"testotxt\" was not injected: check your FXML file 'Scene.fxml'.";
         assert Checkbtn != null : "fx:id=\"Checkbtn\" was not injected: check your FXML file 'Scene.fxml'.";
         assert resulttxt != null : "fx:id=\"resulttxt\" was not injected: check your FXML file 'Scene.fxml'.";
@@ -61,3 +69,4 @@ public class FXMLController {
 
     }
 }
+
