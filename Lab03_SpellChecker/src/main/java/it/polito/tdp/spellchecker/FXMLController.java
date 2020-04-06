@@ -47,7 +47,7 @@ public class FXMLController {
 
     @FXML
     void handlelanguage(ActionEvent event) {
-
+//scegliere lingua
     }
 
     @FXML
