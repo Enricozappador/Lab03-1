@@ -5,8 +5,8 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.MenuButton;
 import javafx.scene.control.TextArea;
 
 public class FXMLController {
@@ -18,7 +18,7 @@ public class FXMLController {
     private URL location;
 
     @FXML
-    private MenuButton Languagebtn;
+    private ComboBox<?> Languagebtn;
 
     @FXML
     private TextArea testotxt;
@@ -46,6 +46,11 @@ public class FXMLController {
     }
 
     @FXML
+    void handlelanguage(ActionEvent event) {
+
+    }
+
+    @FXML
     void initialize() {
         assert Languagebtn != null : "fx:id=\"Languagebtn\" was not injected: check your FXML file 'Scene.fxml'.";
         assert testotxt != null : "fx:id=\"testotxt\" was not injected: check your FXML file 'Scene.fxml'.";
@@ -56,4 +61,3 @@ public class FXMLController {
 
     }
 }
-
