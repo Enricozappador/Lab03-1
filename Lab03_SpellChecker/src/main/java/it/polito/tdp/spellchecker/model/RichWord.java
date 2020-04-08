@@ -4,7 +4,8 @@ public class RichWord {
 	
 	private String parola; 
 	private boolean corretto;
-	public RichWord(String parola, boolean corretto) {
+	
+	public RichWord(String parola) {
 		super();
 		this.parola = parola;
 		this.corretto = corretto;

@@ -22,7 +22,7 @@ public class Dictionary {
 					BufferedReader br = new BufferedReader(fr); 
 					String word; 
 					while((word = br.readLine()) != null) {
-						//aggiungere
+						dizionario.add(word);
 					}
 					br.close();
 			} 
@@ -37,7 +37,7 @@ public class Dictionary {
 					BufferedReader br = new BufferedReader(fr); 
 					String word; 
 					while((word = br.readLine()) != null) {
-						//aggiungere
+						dizionario.add(word);
 					}
 					br.close();
 			} 
@@ -48,11 +48,18 @@ public class Dictionary {
 		}
 		
 		//public List<RichWord> spellCheckText(List<String> inputTextList); 
-		public List<RichWord> spellCheckText(List<String> inputTextList){
+		
+		
+	
+		
+	}
+	
+	public List<RichWord> spellCheckText(List<String> inputTextList){
 			List<RichWord> parole = new ArrayList<>(); 
 			
 			for(String s : inputTextList) {
 				RichWord parola = new RichWord(s); 
+				
 				if(dizionario.contains(parola)) {
 					parola.setCorretto(true);
 				}
@@ -66,8 +73,4 @@ public class Dictionary {
 			return parole; 
 			
 		}
-		
-	
-		
-	}
 }
